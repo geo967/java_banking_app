@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Bank App - kotlin</string>
+    <string name="bank_logo">bank logo</string>
+    <string name="staff_login">Staff login</string>
+    <string name="customer_login">customer login</string>
+    <string name="staff">Staff</string>
+    <string name="customer">Customer</string>
+    <string name="enter_your_customer_id">Enter your Customer ID</string>
+    <string name="enter_your_staff_id">Enter your Staff ID</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="to_add_new_user">to add new user</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="select_dob">Select DOB</string>
+    <string name="age">Age</string>
+    <string name="sex">Sex</string>
+    <string name="e_mail">e-mail</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="account_type">Account Type</string>
+    <string name="savings">Savings</string>
+    <string name="current">Current</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="select_customer">Select Customer</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="view_interest_rate">View Interest Rate</string>
+    <string name="total_no_of_customer">Total No Of Customers</string>
+    <string name="count">count</string>
+    <string name="account_info">Account Info</string>
+    <string name="make_transaction">Make Transaction</string>
+    <string name="interest_amount">Interest Amount</string>
+    <string name="credit">credit</string>
+    <string name="debit">debit</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="rs">Rs:</string>
+    <string name="show_my_details">Show my details</string>
+    <string name="your_interest_rate">Your interest rate</string>
+    <string name="show_balance">show balance</string>
+    <string name="your_balance_is">your balance is</string>
+    <string name="proceed">proceed</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.CustomerLogin"
+    android:background="@drawable/shape_login_screen"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="87dp"
+        android:contentDescription="@string/bank_logo"
+        android:src="@drawable/bank_logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_staffId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/enter_your_staff_id"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        app:startIconTint="@color/black"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/account_circle"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:boxStrokeWidthFocused="3dp"
+        android:background="@drawable/shape_layout"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id_staff_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/enter_your_password"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/account_lock"
+        app:startIconTint="@color/black"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+        app:endIconTint="@color/black"
+        app:boxStrokeWidthFocused="3dp"
+        android:background="@drawable/shape_layout"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/id_signIn_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="5dp"
+        android:background="@drawable/shape_layout"
+
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</LinearLayout>

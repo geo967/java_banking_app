@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_login_screen"
+
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_login_button"
+        android:text="@string/create_account" />
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/text_color"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_layout"
+        android:cursorVisible="true"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/date_picker"
+            style="@style/text_color"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:autofillHints=""
+            android:background="@drawable/shape_layout"
+            android:hint="@string/select_dob"
+            android:inputType="date"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/text_color"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_layout"
+            android:gravity="center"
+            android:text="@string/age" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/sex" />
+
+        <Spinner
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/text_color"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_layout"
+        android:cursorVisible="true"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/mobile_no"
+        style="@style/text_color"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_layout"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+
+        android:padding="20dp" />
+
+    <TextView
+
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/account_type" />
+
+    <RadioGroup
+        android:id="@+id/radio_gp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_layout"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_savings"
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/savings" />
+
+        <RadioButton
+            android:id="@+id/radio_current"
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/sign_up" />
+</LinearLayout>

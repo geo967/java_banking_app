@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_login_screen"
+    tools:context=".view.StaffLoginFirstPage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ScrollViewCount">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="87dp"
+                android:contentDescription="@string/bank_logo"
+                android:src="@drawable/bank_logo" />
+            <Button
+                android:id="@+id/id_show_balance"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="5dp"
+                android:background="@drawable/shape_login_button"
+                android:text="@string/show_balance"
+                android:textSize="16sp"
+                android:textColor="#E31118"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/id_my_balance"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:text="@string/your_balance_is"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:textColor="#01020B"
+                android:textStyle="bold"
+                android:background="@drawable/shape_layout"
+                android:visibility="gone"
+            />
+
+
+            <Button
+                android:id="@+id/id_customer_make_transaction"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="5dp"
+                android:background="@drawable/shape_login_button"
+                android:text="@string/make_transaction"
+                android:textSize="16sp"
+                android:textColor="#E31118"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="65dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/shape_layout"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/credit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:background="@drawable/shape_login_button"
+                    android:text="@string/credit"
+
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+                <Button
+                    android:id="@+id/debit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="50dp"
+
+                    android:background="@drawable/shape_login_button"
+                    android:text="@string/debit"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/id_credit_text"
+                    style="@style/text_color"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="90dp"
+                    android:hint="@string/rs"
+                    android:visibility="gone"
+                    android:inputType="number"
+                    android:autofillHints="" />
+                <EditText
+                    android:id="@+id/id_debit_text"
+                    style="@style/text_color"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="60dp"
+                    android:hint="@string/rs"
+                    android:visibility="gone"
+                    android:inputType="number"
+                    android:autofillHints="" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/id_trans_confi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="90dp"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/credit_conf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/shape_login_button"
+                    android:text="@string/proceed"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+                <Button
+                    android:id="@+id/debit_conf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_login_button"
+                    android:text="@string/proceed"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/id_view_interest_rate"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="5dp"
+                android:background="@drawable/shape_login_button"
+                android:text="@string/view_interest_rate"
+                android:textSize="16sp"
+                android:textColor="#E31118"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/id_interest_rate"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/your_interest_rate"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="@drawable/shape_layout"
+                android:textColor="#E31118"
+                android:textStyle="bold"
+              />
+
+            <Button
+                android:id="@+id/id_customer_acc_info"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="5dp"
+                android:background="@drawable/shape_login_button"
+                android:text="@string/show_my_details"
+                android:textSize="16sp"
+                android:textColor="#E31118"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_customer_details"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:background="@drawable/shape_layout"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/id_customerId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Id : "
+                    android:layout_marginTop="30dp"
+                   android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Password : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+
+                    android:id="@+id/account_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Acc No : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/id_account_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Acc Type : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/id_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Phone : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/id_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Age : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/id_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance : "
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#E31118"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
